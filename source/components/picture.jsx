@@ -5,13 +5,13 @@ import ClassNames from 'classnames';
 
 const Picture = React.createClass({
   propTypes: {
-    imgSet: React.PropTypes.arrayOf(
+    imgSet: React.PropTypes.arrayOf(//#
       React.PropTypes.shape({
         media: React.PropTypes.string.isRequired,
         src: React.PropTypes.string.isRequired
       }).isRequired
     ),
-    defaultImage: React.PropTypes.shape({
+    defaultImage: React.PropTypes.shape({//#
       src: React.PropTypes.string.isRequired,
       alt: React.PropTypes.string.isRequired
     }).isRequired,

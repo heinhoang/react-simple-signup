@@ -11,7 +11,7 @@ const Carousel = require('react-bootstrap').Carousel;
 const CarouselItem = require('react-bootstrap').CarouselItem;
 
 const App = React.createClass({
-  getInitialState(){
+  getInitialState(){//#
     return {
       vHeight: 320,
       vWidth: 480
@@ -24,9 +24,9 @@ const App = React.createClass({
     this.calculateViewport();
   },
   calculateViewport(){
-    let vHeight = Math.max(document.documentElement.clientHeight,
+    let vHeight = Math.max(document.documentElement.clientHeight,//#
       window.innerHeight || 0);
-    let vWidth = Math.max(document.documentElement.clientWidth,
+    let vWidth = Math.max(document.documentElement.clientWidth,//#
       window.innerWidth || 0);
     this.setState({
       vHeight: vHeight,
